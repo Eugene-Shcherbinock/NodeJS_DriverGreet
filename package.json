@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eugene-Shcherbinock/DriverGreet_NodeJS.git"
+    "url": "git+https://github.com/Eugene-Shcherbinock/NodeJS_DriverGreet.git"
   },
   "author": "Eugene Shcherbinock",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Eugene-Shcherbinock/DriverGreet_NodeJS/issues"
+    "url": "https://github.com/Eugene-Shcherbinock/NodeJS_DriverGreet/issues"
   },
-  "homepage": "https://github.com/Eugene-Shcherbinock/DriverGreet_NodeJS#readme",
+  "homepage": "https://github.com/Eugene-Shcherbinock/NodeJS_DriverGreet#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
