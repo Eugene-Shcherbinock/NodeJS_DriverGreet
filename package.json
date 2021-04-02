@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development nodemon index.js",
-    "prod": "NODE_ENV=production nodemon index.js"
+    "prod": "NODE_ENV=production nodemon index.js",
+    "start_mongodb": "brew services start mongodb-community",
+    "stop_mongodb": "brew services stop mongodb-community"
   },
   "repository": {
     "type": "git",

@@ -5,8 +5,8 @@ class BaseCommand {
         this._app = app
     }
 
-    execute() {
-        console.error(`${this} should implement this method`)
+    executeAsync() {
+        return Promise.reject(new Error(`${this} should implement this method`))
     }
 
 }

@@ -1,9 +1,14 @@
 const express = require("express")
+const mongoose = require("mongoose")
 
-const { DefaultServerSetupCommand } = require("./common/commands/express/default-server-setup")
-const serverConfigs = require("./secure/config")
+const { appProvider } = require("./providers/app-provider")
 
 const app = express()
-
-const config = serverConfigs[process.env.NODE_ENV] || serverConfigs.development
-new DefaultServerSetupCommand(app, config).execute()
+appProvider.start(app, mongoose, process.env.NODE_ENV, (error, result) => {
+    if (error) {
+        console.error(error)
+        process.exit(1)
+    }
+    console.log(result)
+    console.log("Application started!")
+})
